@@ -57,7 +57,7 @@ html {
     transform: translate(0px, 0px);
   }
 }
-@keyframes up {
+@keyframes up-t {
   from {
     transform: translate(0px, 20px);
   }
@@ -65,6 +65,16 @@ html {
     transform: translate(0px, 0px);
   }
 }
+
+@keyframes up {
+  from {
+    transform: translate(0px, 1000px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
 a:hover {
   animation: fadeout 1s forwards;
   cursor: url(resources/hand.cur), auto;
@@ -134,7 +144,7 @@ header {
   animation: down 2s forwards;
 }
 .hero-sec .second-text-sec {
-  animation: up 2s forwards;
+  animation: up-t 2s forwards;
 }
 .quote-box {
   padding: 25px 60px 60px 60px;
@@ -460,6 +470,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 5rem 1fr;
+  overflow: hidden;
 }
 
 .first-text-sec-journey {
@@ -522,6 +533,7 @@ header {
     1px 18px 12px rgba(16, 16, 16, 0.1), 1px 20px 20px rgba(16, 16, 16, 0.2);
 }
 .box-journey-four {
+  position: relative;
   height: 100%;
   width: 90%;
   align-self: self-end;
@@ -556,6 +568,7 @@ header {
     1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 .ben_cat {
+  animation: down 0.5s forwards;
   margin-top: 2rem;
   margin-left: 3rem;
 
@@ -564,4 +577,99 @@ header {
   grid-row: 2/3;
   height: 45%;
   width: 40%;
+}
+
+.tofi {
+  position: absolute;
+  top: 0rem;
+  right: 4rem;
+}
+
+.box-journey-first {
+  position: relative;
+}
+
+.box-journey-first ul {
+  list-style-type: "-  ";
+  position: absolute;
+  left: 2.2rem;
+  top: 5.5rem;
+}
+.box-journey-first ul li {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 2rem;
+}
+
+.box-journey-first {
+  position: relative;
+  animation: up 1s forwards;
+}
+
+.box-journey-first ul {
+  list-style-type: "-  ";
+  position: absolute;
+  left: 2.2rem;
+  top: 5.5rem;
+}
+.box-journey-first ul li {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 2rem;
+}
+
+.box-journey-second {
+  position: relative;
+  animation: up 1.5s forwards;
+}
+
+.box-journey-second ul {
+  list-style-type: "-  ";
+  position: absolute;
+  left: 2.2rem;
+  top: 5.5rem;
+}
+.box-journey-second ul li {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 2rem;
+}
+
+.box-journey-third {
+  position: relative;
+  animation: up 2s forwards;
+}
+
+.box-journey-third ul {
+  list-style-type: "-  ";
+  position: absolute;
+  left: 2.2rem;
+  top: 5.5rem;
+}
+.box-journey-third ul li {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 2rem;
+}
+
+.box-journey-four {
+  position: relative;
+  animation: up 2.5s forwards;
+}
+
+.box-journey-four ul {
+  list-style-type: "-  ";
+  position: absolute;
+  left: 2.2rem;
+  bottom: 2rem;
+}
+.box-journey-four ul li {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 2rem;
 }
