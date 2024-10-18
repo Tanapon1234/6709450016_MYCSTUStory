@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.container{
+    margin-left:auto;
+    margin-right:auto;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -147,10 +151,12 @@ header {
   animation: up-t 2s forwards;
 }
 .quote-box {
-  padding: 25px 60px 60px 60px;
+    margin-left:auto;
+    margin-right:auto;
+  padding: 1.56rem 3.75rem 3.75rem 3.75rem;
   background-color: white;
-  width: 55rem;
-  height: 32rem;
+  width: 880px;
+  height: 512px;
 
   transform: perspective(70em) rotateX(22deg);
   box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
@@ -752,4 +758,19 @@ header {
   color: rgb(158, 158, 158);
   position: absolute;
   right: 3rem;
+}
+
+@media screen and (max-width:1123px){
+    .g-my-skill{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-gap:3rem;
+        align-items:center;
+        justify-items:center;
+    }
+    .Third-sec-c{
+        overflow:hidden;
+        margin-bottom:0;
+    }
 }
