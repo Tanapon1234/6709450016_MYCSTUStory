@@ -112,6 +112,7 @@ header {
     ),
     url("resources/handtohand.png");
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 2rem;
   margin-top: 1rem;
   height: 35rem;
@@ -759,11 +760,16 @@ header {
   position: absolute;
   right: 3rem;
 }
+@media screen and (max-width:1320px){
+    .p:hover .python,.c:hover .c-language,.h:hover .html,.cs:hover .css,.j:hover .js,.d:hover .dart {
+  visibility: hidden;
+}
 
+}
 @media screen and (max-width:1123px){
     .g-my-skill{
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:0.5fr 0.5fr;
         grid-template-rows:1fr 1fr 1fr;
         grid-gap:3rem;
         align-items:center;
@@ -772,5 +778,118 @@ header {
     .Third-sec-c{
         overflow:hidden;
         margin-bottom:0;
+    }
+    .p:hover .python,.c:hover .c-language,.h:hover .html,.cs:hover .css,.j:hover .js,.d:hover .dart {
+  visibility: hidden;
+}
+}
+@media screen and (max-width:1000px){
+
+    nav{
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:flex-end;
+        height:150px;
+    }
+    .quote-box{
+        width:600px;
+        height:850px;
+    }
+    .second-section{
+        height:70rem;
+    }
+    header{
+        padding:1rem 2rem;
+    }
+    .content-in-quote{
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+        height:400px
+    }
+    .g-my-skill{
+        width:50rem;
+    }
+    .line-down{
+        display:none;
+    }
+}
+
+@media screen and (max-width:850px){
+    .first-section{
+        background-size:contain;
+    }
+}
+@media screen and (max-width:700px){
+     .quote-box{
+        width:400px;
+        height:1050px;
+    }
+    .text-in-testimonal h1{
+        width:10rem;
+    }
+    .text-in-testimonal{
+        display:flex;
+        flex-direction:column;
+        height:180px; 
+    }
+    .testimonal{
+        padding:20px
+    }
+    .g-my-skill{
+        width:40rem;
+    }
+    .cat-gif{
+        width:10rem;
+        height:8rem;
+    }
+    .line-x{
+        width:15rem;
+    
+    }
+}
+@media screen and (max-width:600px){
+ .cat-gif{
+        visibility:hidden;
+    }
+ .g-my-skill{                                                                
+     width:30rem;                                                            
+  }
+  .quote-box{
+      width:300px;
+      padding:30px;
+  }
+  .img-for-video{
+      width:10rem;
+      height:6rem;
+  }
+  .testimonal{
+      width:15rem;
+      flex-direction:column;
+      height:2rem;
+  }
+  .content-in-quote{
+      height:350px;
+  }
+  .testimonal img{
+      display:none;
+  }
+}
+@media screen and (max-width:450px){
+    .g-my-skill{
+        width:18rem;
+    }
+}
+@media screen and (max-width:370px){
+    .quote-box{
+        width:280px;
+        height:1150px;
+    }
+    .text-in-quote-box h1{
+        font-size:2.5rem;
+
+    }
+    .line-x{
+        width:10rem;
     }
 }
